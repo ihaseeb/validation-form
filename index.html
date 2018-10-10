@@ -1,0 +1,79 @@
+
+<html>
+    <head>
+    <title>Task 1</title>
+    <script type="text/javascript">
+        function validateForm() {
+            
+            if(document.myform.fname.value== "" ||  document.myform.fname.value==null )
+         {
+            alert( "Please provide your  First name!");
+            document.myform.fname.focus() ;
+           
+            return false;
+         }
+         if(document.myform.lname.value== "" ||  document.myform.lname.value==null )
+         {
+            alert( "Please provide your Last name!");
+            document.myform.lname.focus() ;
+            return false;
+        }
+        if(document.myform.email.value== "" ||  document.myform.email.value==null )
+         {
+            alert( "Please provide your email!");
+            document.myform.email.focus() ;
+            return false;
+        }
+        if(document.myform.id.value== "" ||  document.myform.id.value==null )
+         {
+            alert( "Please provide your id!");
+            document.myform.id.focus() ;
+            return false;
+    }
+    if(document.myform.password.value== "" ||  document.myform.password.value==null )
+         {
+            alert( "Please provide your password");
+            document.myform.password.focus() ;
+            return false;
+    }
+    if(document.myform.password.value== "" ||  document.myform.pas.value==null )
+         {
+            alert( "Conform your password!");
+            document.myform.pas.focus() ;
+            return false;
+         }
+         if(document.myform.password.value != document.myform.pas.value)
+         {
+            alert( "Conform your password!");
+            document.myform.pas.focus() ;
+            return false;
+         }
+       
+    }
+    
+           
+      
+    </script>
+    </head>
+    <body>
+        <form action="" name="myform" onsubmit="return validateForm();">
+            First Name <br><input type="text" name="fname"  ><br>
+            Last  Name<br> <input type="text" name="lname"><br>
+            Email address<br> <input type="email" name="email" ><br>
+            User id<br><input type="text" name="id" ><br>
+            Passward<br><input type="passward" name="password" ><br>
+            Confirm Passward<br><input type="passward" name="pas" ><br>
+            <input type="submit" value="submit">
+        </form>
+        
+        
+        
+        
+            
+               
+       
+        
+    
+    
+    </body>
+    </html>
